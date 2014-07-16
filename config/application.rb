@@ -25,7 +25,7 @@ module ExampleAppointments
     $RE_SIMPLE_DATETIME = /\A[0-9\/]+\s[0-9:]+\z/
     $RE_SIMPLE_NAME = /\A(\w+)(\s+\w+)*\z/
     $RE_SIMPLE_COMMENT = /(\A(\w+)(\s+\w+)*\z)*/
-    $RE_SIMPLE_CSV_LINE = /\A([0-9\/]+\s[0-9:]+),([0-9\/]+\s[0-9:]+),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*)?\z/
+    $RE_SIMPLE_CSV_LINE = /\A([0-9\/]+\s[0-9:]+),([0-9\/]+\s[0-9:]+),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*)?(,)*\z/
     $RE_SIMPLE_CSV_HEADER = /\A((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*)?\z/
     $RE_SIMPLE_CSV_CONTENT = /(\A((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*)?\z)?(\A([0-9\/]+\s[0-9:]+),([0-9\/]+\s[0-9:]+),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*),((\w+)(\s+\w+)*)?\z)+/
     
