@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  process_start_time: 2014-05-19 08:01:23
+  process_end_time: 2014-05-19 08:01:23
+  content: MyText
+
+two:
+  process_start_time: 2014-05-19 08:01:23
+  process_end_time: 2014-05-19 08:01:23
+  content: MyText

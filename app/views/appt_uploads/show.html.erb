@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Process start time:</strong>
+  <%= @appt_upload.process_start_time %>
+</p>
+
+<p>
+  <strong>Process end time:</strong>
+  <%= @appt_upload.process_end_time %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @appt_upload.content %>
+</p>
+
+<%= link_to 'Edit', edit_appt_upload_path(@appt_upload) %> |
+<%= link_to 'Back', appt_uploads_path %>

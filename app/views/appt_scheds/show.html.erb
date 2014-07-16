@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @appt_sched.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @appt_sched.end_time %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @appt_sched.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @appt_sched.last_name %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @appt_sched.comments %>
+</p>
+
+<%= link_to 'Edit', edit_appt_sched_path(@appt_sched) %> |
+<%= link_to 'Back', appt_scheds_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_time: <%= Time.now + 11 %>
+  end_time: <%= Time.now + 12 %>
+  first_name: Sammy
+  last_name: Smith
+  comments: Knight
+
+two:
+  start_time: <%= Time.now + 13 %>
+  end_time: <%= Time.now + 14 %>
+  first_name: Janice
+  last_name: Doe
+  comments: Princess
+
+# three: '{"start_time":"2014-05-14T09:30:00.000Z","end_time":"2014-05-14T10:30:00.000Z","first_name":"John","last_name":"Doe","comments":"This should fail due to overlap."}'

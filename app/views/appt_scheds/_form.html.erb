@@ -1,0 +1,37 @@
+<%= form_for(@appt_sched) do |f| %>
+  <% if @appt_sched.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@appt_sched.errors.count, "error") %> prohibited this appt_sched from being saved:</h2>
+
+      <ul>
+      <% @appt_sched.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :start_time %> (UTC)<br>
+    <%= f.datetime_select :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %> (UTC)<br>
+    <%= f.datetime_select :end_time %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br>
+    <%= f.text_field :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

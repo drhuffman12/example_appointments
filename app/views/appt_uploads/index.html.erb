@@ -1,0 +1,31 @@
+<h1>Listing appt_uploads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process start time</th>
+      <th>Process end time</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appt_uploads.each do |appt_upload| %>
+      <tr>
+        <td><%= appt_upload.process_start_time %></td>
+        <td><%= appt_upload.process_end_time %></td>
+        <td><%= appt_upload.content %></td>
+        <td><%= link_to 'Show', appt_upload %></td>
+        <td><%= link_to 'Edit', edit_appt_upload_path(appt_upload) %></td>
+        <td><%= link_to 'Destroy', appt_upload, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Appt upload', new_appt_upload_path %>

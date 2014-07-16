@@ -1,0 +1,35 @@
+<h1>Listing appt_scheds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Comments</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appt_scheds.each do |appt_sched| %>
+      <tr>
+        <td><%= appt_sched.start_time %></td>
+        <td><%= appt_sched.end_time %></td>
+        <td><%= appt_sched.first_name %></td>
+        <td><%= appt_sched.last_name %></td>
+        <td><%= appt_sched.comments %></td>
+        <td><%= link_to 'Show', appt_sched %></td>
+        <td><%= link_to 'Edit', edit_appt_sched_path(appt_sched) %></td>
+        <td><%= link_to 'Destroy', appt_sched, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Appt sched', new_appt_sched_path %>
